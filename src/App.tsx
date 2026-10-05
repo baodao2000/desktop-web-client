@@ -24,7 +24,7 @@ export const App: React.FC = () => {
           <div>
             <h1 className="title">Desktop & Web React Client</h1>
             <p className="subtitle">
-              Hello <strong>Phú Anh Yêu Phát Yêu Thơ</strong>
+              Hello <strong>Phú Anh Yêu Phát Yêu Thơ Yêu Đức</strong>
             </p>
           </div>
         </div>
