@@ -34,7 +34,7 @@ jobs:
         run: |
           npm run build
           npm run compile:electron
-          npx electron-builder
+          npx electron-builder --publish never
 
       - name: Upload Installer Artifacts
         uses: actions/upload-artifact@v4
