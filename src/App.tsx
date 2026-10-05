@@ -20,7 +20,7 @@ export const App: React.FC = () => {
           <div>
             <h1 className="title">Desktop & Web React Client</h1>
             <p className="subtitle">
-              Sẵn sàng kết nối tới <strong>Express + PostgreSQL Backend</strong>
+              Hello <strong>Phú Anh</strong>
             </p>
           </div>
         </div>
