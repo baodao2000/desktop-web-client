@@ -2,12 +2,16 @@ import React from 'react'
 import { DesktopControls } from './components/DesktopControls'
 import { ApiStatusBadge } from './components/ApiStatusBadge'
 import { DataDemo } from './components/DataDemo'
+import { UpdateNotifier } from './components/UpdateNotifier'
 import { Terminal, Package, Layers, ShieldCheck } from 'lucide-react'
 import './App.css'
 
 export const App: React.FC = () => {
   return (
     <div className="app-container">
+      {/* Thông báo cập nhật phiên bản mới */}
+      <UpdateNotifier />
+
       {/* Thanh điều khiển Desktop / Banner */}
       <DesktopControls />
 
@@ -20,7 +24,7 @@ export const App: React.FC = () => {
           <div>
             <h1 className="title">Desktop & Web React Client</h1>
             <p className="subtitle">
-              Hello <strong>Phú Anh Yêu Phát</strong>
+              Hello <strong>Phú Anh Yêu Phát Yêu Thơ</strong>
             </p>
           </div>
         </div>
