@@ -1,6 +1,6 @@
 {
   "name": "desktop-web-client",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "description": "Desktop & Web application built with React, TypeScript, Vite and Electron",
   "main": "dist-electron/main.js",

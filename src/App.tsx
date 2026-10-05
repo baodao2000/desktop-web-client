@@ -20,7 +20,7 @@ export const App: React.FC = () => {
           <div>
             <h1 className="title">Desktop & Web React Client</h1>
             <p className="subtitle">
-              Hello <strong>Phú Anh</strong>
+              Hello <strong>Phú Anh Yêu Phát</strong>
             </p>
           </div>
         </div>
