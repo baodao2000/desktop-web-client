@@ -1,0 +1,37 @@
+{
+  "name": "desktop-web-client",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desktop & Web application built with React, TypeScript, Vite and Electron",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "compile:electron": "tsc -p electron/tsconfig.json",
+    "electron:dev": "concurrently -k -s first \"npm run dev\" \"wait-on tcp:5173 && npm run compile:electron && cross-env NODE_ENV=development electron .\"",
+    "electron:build": "npm run build && npm run compile:electron && electron-builder",
+    "electron:build:win": "npm run build && npm run compile:electron && electron-builder --win",
+    "electron:build:mac": "npm run build && npm run compile:electron && electron-builder --mac",
+    "electron:build:linux": "npm run build && npm run compile:electron && electron-builder --linux"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "lucide-react": "^0.453.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "wait-on": "^8.0.1"
+  }
+}

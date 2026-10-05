@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-electron
+dist-ssr
+*.local
+
+# Output / Built installers (Rất nặng, không đẩy lên repo code)
+release
+build
+
+# Environment files (Chứa config nội bộ)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor & System files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
