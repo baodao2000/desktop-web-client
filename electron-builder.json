@@ -16,7 +16,8 @@
   ],
   "mac": {
     "category": "public.app-category.productivity",
-    "target": ["dmg", "zip"]
+    "target": ["dmg", "zip"],
+    "artifactName": "DesktopWebClient-Mac.${ext}"
   },
   "win": {
     "target": [
@@ -24,7 +25,8 @@
         "target": "nsis",
         "arch": ["x64"]
       }
-    ]
+    ],
+    "artifactName": "DesktopWebClient-Setup.${ext}"
   },
   "nsis": {
     "oneClick": false,
