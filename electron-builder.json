@@ -9,6 +9,11 @@
     "dist-electron/**/*",
     "package.json"
   ],
+  "publish": {
+    "provider": "github",
+    "owner": "baodao2000",
+    "repo": "desktop-web-client"
+  },
   "mac": {
     "category": "public.app-category.productivity",
     "target": ["dmg", "zip"],

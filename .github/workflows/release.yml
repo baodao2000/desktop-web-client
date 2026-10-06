@@ -43,6 +43,8 @@ jobs:
           path: |
             release/*.dmg
             release/*.exe
+            release/*.exe.blockmap
+            release/latest.yml
           retention-days: 1
 
   publish:
@@ -61,6 +63,8 @@ jobs:
           files: |
             dist-release/*.dmg
             dist-release/*.exe
+            dist-release/*.exe.blockmap
+            dist-release/latest.yml
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
           draft: false

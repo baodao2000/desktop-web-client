@@ -8,6 +8,11 @@ interface ImportMeta {
   readonly env: ImportMetaEnv
 }
 
+type UpdateEvent =
+  | { type: 'progress'; percent: number }
+  | { type: 'downloaded' }
+  | { type: 'error'; message: string }
+
 interface Window {
   electronAPI?: {
     platform: string
@@ -16,5 +21,8 @@ interface Window {
     maximizeWindow: () => void
     closeWindow: () => void
     openExternalUrl: (url: string) => void
+    downloadUpdate: (url: string) => Promise<void>
+    installUpdate: () => void
+    onUpdateEvent: (callback: (event: UpdateEvent) => void) => () => void
   }
 }
