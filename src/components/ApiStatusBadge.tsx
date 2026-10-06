@@ -20,8 +20,8 @@ export const ApiStatusBadge: React.FC = () => {
   useEffect(() => {
     verifyHealth()
     // Poll status every 30 seconds
-    const interval = setInterval(verifyHealth, 30000)
-    return () => clearInterval(interval)
+    // const interval = setInterval(verifyHealth, 30000)
+    // return () => clearInterval(interval)
   }, [])
 
   return (
